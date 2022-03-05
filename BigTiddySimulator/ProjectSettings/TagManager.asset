@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1380816021
+    locked: 0
+  - name: 'Charathers '
+    uniqueID: 301683891
+    locked: 0
+  - name: Cinematic Layer
+    uniqueID: 3665732525
+    locked: 0
+  - name: Main Ui
+    uniqueID: 1999144105
+    locked: 0
