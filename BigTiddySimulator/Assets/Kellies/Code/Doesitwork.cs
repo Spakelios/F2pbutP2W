@@ -17,7 +17,7 @@ public class Doesitwork : MonoBehaviour
 
  public string[] s = new string[]
  {
- "nice tits : Simp",
+ "nice tits Simp",
  "ty i grew them myself",
  "woah based"
  };
@@ -42,7 +42,7 @@ public class Doesitwork : MonoBehaviour
  {
   string[] parts = s.Split(':');
   string speech = parts[0];
-  string speaker = (parts.Length >= 2 ? parts[1] : ":");
+  string speaker = (parts.Length >= 2 ? parts[1] : "Simp");
   
   dialogue.Say(speech, speaker);
  }

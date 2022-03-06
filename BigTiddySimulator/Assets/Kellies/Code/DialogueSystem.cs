@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using System.Xml.Schema;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -9,6 +10,7 @@ using TMPro;
 public class DialogueSystem : MonoBehaviour 
 {
 	public static DialogueSystem instance;
+	public GameObject Choice;
 
 	public ELEMENTS elements;
 
@@ -40,6 +42,7 @@ public class DialogueSystem : MonoBehaviour
 			StopCoroutine(speaking);
 		}
 		speaking = null;
+		Choice.SetActive(true);
 	}
 		
 	public bool isSpeaking {get{return speaking != null;}}
@@ -82,6 +85,12 @@ public class DialogueSystem : MonoBehaviour
 			retVal = (s.ToLower().Contains("narrator")) ? "" : s;
 
 		return retVal;
+	}
+
+	public void close()
+	{
+		StopSpeaking();
+		speechPanel.SetActive(false);
 	}
 
 	[System.Serializable]
