@@ -16,9 +16,27 @@ public class NoteArea : MonoBehaviour
             if (canBePRessed)
             {
                 gameObject.SetActive(false);
-                GameManager.instance.NoteHit();
+                //GameManager.instance.NoteHit();
+
+                if (Mathf.Abs(transform.position.y) > 0.25)
+                {
+                    Debug.Log("hit");
+                    GameManager.instance.NormalHit();
+                }
+                else if (Mathf.Abs(transform.position.y) > 0.05f)
+                {
+                    Debug.Log("good");
+                    GameManager.instance.GoodHit();
+                }
+                else 
+                {
+                    Debug.Log("perfect!");
+                    GameManager.instance.PerfectHit();
+                }
+                    
             }
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
