@@ -8,10 +8,10 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    
+
     public AudioSource theMusic;
 
-    public bool startPLaying;
+    public bool startPLaying = true;
 
     public BeatScroller theBS;
 
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
 
     public int ScorePerGoodNote = 125;
     public int ScorePerPerfectNote = 150;
-    
+
     public int currentMultiplier;
     public int multiplierTracker;
     public int[] multiplierThresholds;
@@ -35,12 +35,12 @@ public class GameManager : MonoBehaviour
     public float missedHits;
 
     public GameObject resultsScreen;
-    public TextMeshProUGUI percentageText, GoodsText, greatsText, perfectsText, missedsText;
-    
+    public TextMeshProUGUI percentageText, goodsText, greatsText, perfectsText, missedsText;
+
     private void Start()
     {
         instance = this;
-       
+
         scoreText.text = "Score: 0";
         currentMultiplier = 2;
 
@@ -63,8 +63,9 @@ public class GameManager : MonoBehaviour
                 if (!theMusic.isPlaying && !resultsScreen.activeInHierarchy)
                 {
                     resultsScreen.SetActive(true);
-                    
-                    GoodsText.text =  normalHits.ToString();
+                   
+
+                    goodsText.text = normalHits.ToString();
                     greatsText.text = goodHits.ToString();
                     perfectsText.text = perfectHits.ToString();
                     missedsText.text = missedHits.ToString();
@@ -77,10 +78,10 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-
     }
 
-        public void NoteHit()
+
+public void NoteHit()
         {
             Debug.Log("Hit on Time");
 
