@@ -1,15 +1,13 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
-public class NoteArea : MonoBehaviour
+public class thisNote : MonoBehaviour
 {
     public bool canBePRessed;
     public KeyCode keyToPress;
 
-    public GameObject  goodEffect, greatEffect, perfectEffect, missedEffect;
+    public GameObject goodEffect, greatEffect, perfectEffect;
   
     private void Update()
     {
@@ -17,8 +15,10 @@ public class NoteArea : MonoBehaviour
         {
             if (canBePRessed)
             {
+                
                 gameObject.SetActive(false);
-                //GameManager.instance.NoteHit();
+                GameManager.instance.resultsScreen.SetActive(true);
+
 
                 if (Mathf.Abs(transform.position.y) > 0.25)
                 {
@@ -62,3 +62,4 @@ public class NoteArea : MonoBehaviour
         }
     }
 }
+
