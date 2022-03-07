@@ -7,10 +7,10 @@ using UnityEngine.UIElements;
 
 public class Buttons : MonoBehaviour
 {
-    public GameObject panels;
+   
  public void startGame()
  {
-     panels.SetActive(false);
+     SceneManager.LoadScene("Proto");
  }
 
  public void endGame()
