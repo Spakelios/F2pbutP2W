@@ -16,6 +16,7 @@ public class NoteArea : MonoBehaviour
             if (canBePRessed)
             {
                 gameObject.SetActive(false);
+                GameManager.instance.NoteHit();
             }
         }
     }
@@ -33,6 +34,8 @@ public class NoteArea : MonoBehaviour
         if (other.CompareTag("Activator"))
         {
             canBePRessed = false;
+            
+            GameManager.instance.NoteMissed();
         }
     }
 }

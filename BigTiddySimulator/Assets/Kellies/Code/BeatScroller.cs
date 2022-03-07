@@ -7,7 +7,7 @@ public class BeatScroller : MonoBehaviour
 {
   public float beatTempo = 2;
 
-   bool hasStarted = true;
+ public  bool hasStarted = true;
 
   private void Start()
   {
@@ -16,7 +16,7 @@ public class BeatScroller : MonoBehaviour
 
   private void Update()
   {
-    if (hasStarted)
+    // if (hasStarted)
     {
       {
         transform.position -= new Vector3(0f, beatTempo * Time.deltaTime, 0f);
