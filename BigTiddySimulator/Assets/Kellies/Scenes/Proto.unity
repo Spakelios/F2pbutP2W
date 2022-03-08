@@ -266,7 +266,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 61391938}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f5b2a6a8279e1ec46b5fd7afd4308660, type: 3}
@@ -368,28 +368,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theMusic: {fileID: 845981860}
-  startPLaying: 1
+  startPLaying: 0
   theBS: {fileID: 1763795535}
   currentScore: 0
   ScorePerNote: 100
   ScorePerGoodNote: 125
   ScorePerPerfectNote: 150
-  currentMultiplier: 1
+  currentMultiplier: 2
   multiplierTracker: 0
   multiplierThresholds: 04000000080000000c000000
   scoreText: {fileID: 700778950}
   multiplierText: {fileID: 245209682}
-  totalNotes: 0
-  normalHits: 0
-  goodHits: 0
-  perfectHits: 0
-  missedHits: 0
-  resultsScreen: {fileID: 235457364}
-  percentageText: {fileID: 870079722}
-  goodsText: {fileID: 900563395}
-  greatsText: {fileID: 918549739}
-  perfectsText: {fileID: 1982458469}
-  missedsText: {fileID: 1448181790}
 --- !u!4 &61391941
 Transform:
   m_ObjectHideFlags: 0
@@ -837,7 +826,7 @@ Transform:
   m_GameObject: {fileID: 157841939}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2, y: 0, z: 0}
-  m_LocalScale: {x: 0.40172, y: 0.40172, z: 0.40172}
+  m_LocalScale: {x: 0.55, y: 0.55, z: 0.40172}
   m_Children: []
   m_Father: {fileID: 696531129}
   m_RootOrder: 1
@@ -1046,7 +1035,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Multiplier x1
+  m_text: 'Multiplier:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1219,7 +1208,7 @@ Transform:
   m_GameObject: {fileID: 245532214}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 8.9, y: 0, z: 0}
-  m_LocalScale: {x: 0.40172, y: 0.40172, z: 0.40172}
+  m_LocalScale: {x: 0.55, y: 0.55, z: 0.40172}
   m_Children: []
   m_Father: {fileID: 696531129}
   m_RootOrder: 3
@@ -3800,7 +3789,7 @@ Transform:
   m_GameObject: {fileID: 1676325999}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.5, y: 0, z: 0}
-  m_LocalScale: {x: 0.40172, y: 0.40172, z: 0.40172}
+  m_LocalScale: {x: 0.55, y: 0.55, z: 0.40172}
   m_Children: []
   m_Father: {fileID: 696531129}
   m_RootOrder: 2
@@ -5091,7 +5080,7 @@ Transform:
   m_GameObject: {fileID: 2126038685}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.800001, y: 0, z: 0}
-  m_LocalScale: {x: 0.40172, y: 0.40172, z: 0.40172}
+  m_LocalScale: {x: 0.55, y: 0.55, z: 0.40172}
   m_Children: []
   m_Father: {fileID: 696531129}
   m_RootOrder: 0
