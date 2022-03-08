@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Kellies/Scenes/Proto.unity
     guid: 5d8115a53005ea84a9e1b1adfcc9b940
+  - enabled: 1
+    path: Assets/Jos/Scenes/Gacha Test.unity
+    guid: 086044f88bb335946a463ef1e9d1cf9c
   m_configObjects: {}
