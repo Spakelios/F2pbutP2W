@@ -15,13 +15,12 @@ public class GachaTable : MonoBehaviour
     public int randomDraw;
     public Button funnyButton;
     public int pullPrice;
-    private CurrencyManager noteAmount;
     private GameObject theManager;
     public CurrencyManager currencyManager;
-    private bool didPull;
     public GameObject commonPool;
     public GameObject uncommonPool;
     public GameObject rarePool;
+    public GameObject poorReminder;
 
 
     private void Start()
@@ -34,10 +33,10 @@ public class GachaTable : MonoBehaviour
         funnyButton.onClick.AddListener(TaskOnClick);
         theManager = GameObject.Find("CurrencyManager");
         currencyManager = theManager.GetComponent<CurrencyManager>();
-        didPull = false;
         commonPool.SetActive(false);
         uncommonPool.SetActive(false);
         rarePool.SetActive(false);
+        poorReminder.SetActive(false);
     }
 
 
@@ -55,8 +54,7 @@ public class GachaTable : MonoBehaviour
                 if (randomDraw <= gachaRates[i])
                 {
                     indicators[i].SetActive(true);
-                    didPull = true;
-                    
+
                     if (commonPool.activeInHierarchy || uncommonPool.activeInHierarchy || rarePool.activeInHierarchy)
                     {
                         Invoke(nameof(Deactivate), 1.0f);
@@ -75,7 +73,12 @@ public class GachaTable : MonoBehaviour
 
         else
         {
-            Debug.Log("Smells like poor in here lmao");
+            poorReminder.SetActive(true);
+
+            if (poorReminder.activeInHierarchy)
+            {
+                Invoke(nameof(Deactivate), 1.0f);
+            }
         }
     }
 
@@ -84,6 +87,7 @@ public class GachaTable : MonoBehaviour
         commonPool.SetActive(false);
         uncommonPool.SetActive(false);
         rarePool.SetActive(false);
+        poorReminder.SetActive(false);
     }
 }
 
