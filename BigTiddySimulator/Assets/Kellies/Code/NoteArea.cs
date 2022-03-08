@@ -9,6 +9,8 @@ public class NoteArea : MonoBehaviour
     public bool canBePRessed;
     public KeyCode keyToPress;
 
+    public GameObject  goodEffect, greatEffect, perfectEffect, missedEffect;
+  
     private void Update()
     {
         if (Input.GetKeyDown(keyToPress))
@@ -22,16 +24,19 @@ public class NoteArea : MonoBehaviour
                 {
                     Debug.Log("hit");
                     GameManager.instance.NormalHit();
+                    Instantiate(goodEffect, transform.position, goodEffect.transform.rotation);
                 }
                 else if (Mathf.Abs(transform.position.y) > 0.05f)
                 {
                     Debug.Log("good");
                     GameManager.instance.GoodHit();
+                    Instantiate(greatEffect, transform.position, greatEffect.transform.rotation);
                 }
                 else 
                 {
                     Debug.Log("perfect!");
                     GameManager.instance.PerfectHit();
+                    Instantiate(perfectEffect, transform.position, perfectEffect.transform.rotation);
                 }
                     
             }
@@ -46,13 +51,13 @@ public class NoteArea : MonoBehaviour
             canBePRessed = true;
         }
     }
-    
+
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Activator"))
         {
             canBePRessed = false;
-            
+
             GameManager.instance.NoteMissed();
         }
     }
