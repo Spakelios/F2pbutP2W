@@ -13,8 +13,13 @@ public class Buttons : MonoBehaviour
      SceneManager.LoadScene("Proto");
  }
 
- public void endGame()
+ public void gachaTime()
  {
-     
+     SceneManager.LoadScene("Gacha Test");
+ }
+
+ public void datingTime()
+ {
+     SceneManager.LoadScene("Visual Novel part");
  }
 }

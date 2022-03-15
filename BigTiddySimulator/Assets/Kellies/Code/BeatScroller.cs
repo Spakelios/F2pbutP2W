@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class BeatScroller : MonoBehaviour
 {
-  public float beatTempo = 2;
+  public float beatTempo;
 
  public  bool hasStarted = true;
 
   private void Start()
   {
-    beatTempo = beatTempo / 60f;
+    beatTempo = beatTempo / 30f; //originally 60f
   }
 
   private void Update()
