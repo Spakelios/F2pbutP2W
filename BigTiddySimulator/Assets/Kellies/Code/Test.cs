@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class Test : MonoBehaviour
 {
-    public Character simp;
+    public Character portrait;
     private void Start()
     {
-        simp = CharacterManager.instance.GetCharacter("Simp");
+        portrait = CharacterManager.instance.GetCharacter("Tri-Chan");
     }
 
     public string[] speech;
@@ -20,7 +20,7 @@ public class Test : MonoBehaviour
         {
             if (i < speech.Length)
             {
-                simp.say(speech[1]);
+                portrait.say(speech[1]);
             }
             else
             {

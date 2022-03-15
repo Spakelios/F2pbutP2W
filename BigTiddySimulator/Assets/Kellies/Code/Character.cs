@@ -25,7 +25,7 @@ public class Character : MonoBehaviour
         CharacterManager cm = CharacterManager.instance;
 
         // locate the character prefab
-        GameObject prefab = Resources.Load("Simp") as GameObject;
+        GameObject prefab = Resources.Load("Tri-Chan-gle") as GameObject;
 
         // spawn an instance of the prefab directly on the character panel
         GameObject ob = GameObject.Instantiate (prefab, cm.characterPanel);
@@ -34,7 +34,7 @@ public class Character : MonoBehaviour
         characterName = _name;
 
 //get the renderer(s)
-        renderers.renderer = ob.GetComponentInChildren<RawImage> ();
+        renderers.renderer = ob.GetComponentInChildren<Image> ();
     
         if (isMultiLayerCharacter)
         {
@@ -48,7 +48,7 @@ public class Character : MonoBehaviour
    public class Renderers
     {
         // used as the only image for single layer character
-        public RawImage renderer;
+        public Image renderer;
 
         //sprites use images
         //the body renderer for the multilayer character
