@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    
+
     public AudioSource theMusic;
 
     public bool startPLaying;
@@ -20,18 +20,19 @@ public class GameManager : MonoBehaviour
 
     public int ScorePerGoodNote = 125;
     public int ScorePerPerfectNote = 150;
-    
+
     public int currentMultiplier;
     public int multiplierTracker;
     public int[] multiplierThresholds;
 
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI multiplierText;
-    
+
     private void Start()
     {
         instance = this;
 
+        scoreText.text = "Score: 0";
         currentMultiplier = 1;
     }
 
@@ -52,7 +53,7 @@ public class GameManager : MonoBehaviour
     public void NoteHit()
     {
         Debug.Log("Hit on Time");
-       
+
         if (currentMultiplier - 1 < multiplierThresholds.Length)
         {
             multiplierTracker++;
@@ -64,7 +65,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        //currentScore += ScorePerNote * currentMultiplier;
+
         scoreText.text = "Score: " + currentScore;
         multiplierText.text = "Multiplier: " + currentMultiplier;
     }
@@ -86,13 +87,13 @@ public class GameManager : MonoBehaviour
         currentScore += ScorePerPerfectNote;
         NoteHit();
     }
-    
+
     public void NoteMissed()
     {
         Debug.Log("Missed");
 
-        multiplierTracker = 0;
         currentMultiplier = 1;
         multiplierText.text = "Multiplier: " + currentMultiplier;
     }
+
 }
