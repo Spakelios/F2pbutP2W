@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,9 @@ public class DialogueTrigger : MonoBehaviour
     public TMP_Text nameTag;
 
     public Image characterIcon;
+    [SerializeField] private GridLayoutGroup choiceHolder;
+    [SerializeField] private Button choiceButtonPrefab;
+    
     void Start()
     {
         LoadStory();
@@ -47,12 +51,59 @@ public class DialogueTrigger : MonoBehaviour
             text = text?.Trim(); //Removes White space from the text
             dialogueBox.text = text; //Displays new text
         }
-        else 
+        else if(_StoryScript.currentChoices.Count > 0)
+        {
+            DisplayChoices();
+        }
+        else
         {
             dialogueBox.text = ".....";
         }
     }
 
+    public void DisplayChoices()
+    {
+        if (choiceHolder.GetComponentsInChildren<Button>().Length > 0) return;
+        
+        for (int i = 0; i < _StoryScript.currentChoices.Count; i++)
+        {
+            var choice = _StoryScript.currentChoices[i];
+            var button = CreateChoiceButton(choice.text);
+            
+            button.onClick.AddListener(() => onClickChoiceButton(choice));
+        }
+
+    }
+
+    Button CreateChoiceButton(string text)
+    {
+        //instantiate button
+        var choiceButton = Instantiate(choiceButtonPrefab);
+            choiceButton.transform.SetParent(choiceHolder.transform,false);
+
+            var buttonText = choiceButton.GetComponentInChildren<TMP_Text>();
+            buttonText.text = text;
+            return choiceButton;
+    }
+
+    void onClickChoiceButton(Choice choice)
+    {
+        _StoryScript.ChooseChoiceIndex(choice.index);
+        RefreshChoiceView();
+        DisplayNextLine();
+    }
+
+    void RefreshChoiceView()
+    {
+        if (choiceHolder != null)
+        {
+            foreach (var button in choiceHolder.GetComponentsInChildren<Button>())
+            {
+                Destroy(button.gameObject);
+            }
+        }
+    }
+    
     public void ChangeName(string name) 
     {
         string SpeakerName = name;
