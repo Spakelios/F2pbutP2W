@@ -33,7 +33,7 @@ public class DialogueTrigger : MonoBehaviour
         _StoryScript = new Story(_InkJsonFile.text);
 
         _StoryScript.BindExternalFunction("Name", (string charName) => ChangeName(charName));
-        _StoryScript.BindExternalFunction("CharacterIcon", (string charName) => ChangeCharacterIcon(charName));
+        _StoryScript.BindExternalFunction("Icon", (string charName) => CharacterIcon(charName));
 
         DisplayNextLine();
         
@@ -49,7 +49,7 @@ public class DialogueTrigger : MonoBehaviour
         }
         else 
         {
-            dialogueBox.text = "That's all folks";
+            dialogueBox.text = ".....";
         }
     }
 
@@ -60,13 +60,10 @@ public class DialogueTrigger : MonoBehaviour
         nameTag.text = SpeakerName;
     }
 
-    public void ChangeCharacterIcon(string charName) 
+    public void CharacterIcon(string name) 
     {
-        //var characterIconSprite = Resources.Load("CharacterIcons/" + charName) as Sprite;
-        characterIcon.sprite = Resources.Load<Sprite>("CharacterIcons/"+charName);
+        var charIcon = Resources.Load<Sprite>("characterIcons/" + name);
+        characterIcon.sprite = charIcon;
     }
-    
 
- 
 }
-

@@ -1,9 +1,20 @@
-words! 
-They are BEING SAID!?!?!?!
-thats kinda cringe bro
-speaking and shitting
-at the same time? 
+EXTERNAL Name(charName)
+EXTERNAL Icon(charName)
 
-based
+{Name("Triangle-Chan")}
+{Icon("Sad")}
+
+Hello!! Please help me!! 
+
+{Name("You")}
+{Icon("HIM")}
+
+?????
+
+{Name("Triangle-Chan")}
+{Icon("Happy")}
+
+please!!!
+
 
     -> END
