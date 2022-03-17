@@ -122,7 +122,6 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Missed");
         
-        ShowCurrency.totalNotes--;
         missedHits++;
         currentMultiplier = 1;
         multiplierText.text = "Multiplier: " + currentMultiplier;
