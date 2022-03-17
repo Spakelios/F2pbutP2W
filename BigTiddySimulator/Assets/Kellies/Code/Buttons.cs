@@ -20,6 +20,16 @@ public class Buttons : MonoBehaviour
 
  public void datingTime()
  {
-     SceneManager.LoadScene("Visual Novel part");
+     SceneManager.LoadScene("VisualNovelType2");
+ }
+
+ public void gaymersGayming()
+ {
+     SceneManager.LoadScene("Rythm Game");
+ }
+
+ public void triangleStratagy()
+ {
+     SceneManager.LoadScene("UI BONUS ROUND");
  }
 }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -28,12 +29,19 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI multiplierText;
 
+    public GameObject resultsScreen;
+    public TextMeshProUGUI percentHitText, goodsText, greatsText, perfectsText, missesText, moneyText;
+    public float totalHits, goodHits, greatHits, perfectHits, missedHits, percentHit;
+    
+
     private void Start()
     {
         instance = this;
 
         scoreText.text = "Score: 0";
         currentMultiplier = 1;
+        totalHits = FindObjectsOfType<NoteArea>().Length;
+        theMusic.Play();
     }
 
     private void Update()
@@ -42,10 +50,24 @@ public class GameManager : MonoBehaviour
         {
             if (Input.anyKeyDown)
             {
-                startPLaying = true;
+                // startPLaying = true;
                 theBS.hasStarted = true;
+            }
+            else if (!theMusic.isPlaying)
+            {
+                resultsScreen.SetActive(true);
+                goodsText.text = " " + goodHits;
+                greatsText.text = " " + greatHits;
+                perfectsText.text = " " + perfectHits;
+                missesText.text = " " + missedHits;
+                moneyText.text = " " + ShowCurrency.totalNotes;
 
-                theMusic.Play();
+                float totalHit = goodHits + greatHits + perfectHits;
+                float percentHit = (totalHit / totalHits) * 100f;
+
+                percentHitText.text = percentHit.ToString("F1");
+                
+
             }
         }
     }
@@ -73,25 +95,35 @@ public class GameManager : MonoBehaviour
     public void NormalHit()
     {
         currentScore += ScorePerNote;
+        
         NoteHit();
+        ShowCurrency.totalNotes++;
+        goodHits++;
     }
 
     public void GoodHit()
     {
         currentScore += ScorePerGoodNote;
         NoteHit();
+        greatHits++;
+        ShowCurrency.totalNotes++;
+        
     }
 
     public void PerfectHit()
     {
         currentScore += ScorePerPerfectNote;
+        ShowCurrency.totalNotes++;
         NoteHit();
+        perfectHits++;
     }
 
     public void NoteMissed()
     {
         Debug.Log("Missed");
-
+        
+        ShowCurrency.totalNotes--;
+        missedHits++;
         currentMultiplier = 1;
         multiplierText.text = "Multiplier: " + currentMultiplier;
     }

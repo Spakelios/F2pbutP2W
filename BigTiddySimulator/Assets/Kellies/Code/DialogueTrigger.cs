@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Ink.Runtime;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DialogueTrigger : MonoBehaviour
 {
@@ -57,7 +58,8 @@ public class DialogueTrigger : MonoBehaviour
         }
         else
         {
-            dialogueBox.text = ".....";
+            // dialogueBox.text = ".....";
+            SceneManager.LoadScene("UI BONUS ROUND");
         }
     }
 

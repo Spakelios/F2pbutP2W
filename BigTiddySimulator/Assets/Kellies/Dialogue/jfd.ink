@@ -27,16 +27,7 @@ that would be kinda poggers if you did
 
 (poggers??? at a time like this??)
 
-* [Im not helping ]
-{Name("Triangle-Chan")}
-{Icon("Sad")}
-Oh please!! We'll be thrown out if you don't!
 
-{Name("Man With Instrument")}
-{Icon("simp")}
-we called you here for this! 
-
- 
 * [how can i help?]
 {Name("Triangle-Chan")}
 {Icon("Happy")}

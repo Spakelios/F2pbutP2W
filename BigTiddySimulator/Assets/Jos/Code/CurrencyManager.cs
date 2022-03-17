@@ -7,10 +7,11 @@ using TMPro;
 
 public class CurrencyManager : MonoBehaviour
 {
-    public TextMeshProUGUI noteCounter;
-    public int totalNotes;
+    public  TextMeshProUGUI noteCounter;
+    public  int totalNotes;
     private GachaTable gachaTable;
 
+ 
 
     private void Start()
     {
