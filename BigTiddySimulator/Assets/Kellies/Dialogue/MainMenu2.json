@@ -1,0 +1,1 @@
+﻿{"inkVersion":20,"root":[["ev","str","^Man With Instrument","/str",{"x()":"Name","exArgs":1},"out","/ev","\n","ev","str","^simp","/str",{"x()":"Icon","exArgs":1},"out","/ev","\n","^Now try recruiting some new members to really get the ball rolling!","\n","^Press \"Recruit\"","\n","end",["done",{"#f":5,"#n":"g-0"}],null],"done",{"#f":1}],"listDefs":{}}

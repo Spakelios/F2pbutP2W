@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Kellies/Scenes/Rythm Game.unity
     guid: c4a1a290b4b8efd42873b53829e7fb02
+  - enabled: 1
+    path: Assets/Kellies/Scenes/homeScreen2.unity
+    guid: e5c8a4421bdbd284a9870b4210870318
   m_configObjects: {}

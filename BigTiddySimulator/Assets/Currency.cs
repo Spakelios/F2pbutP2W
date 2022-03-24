@@ -7,7 +7,9 @@ using UnityEngine;
 public class Currency : MonoBehaviour
 {
     public TextMeshProUGUI money;
+    
     private void Start()
+
     {
         money.text = " " + ShowCurrency.totalNotes;
     }

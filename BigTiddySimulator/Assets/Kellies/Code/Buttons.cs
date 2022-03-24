@@ -30,6 +30,6 @@ public class Buttons : MonoBehaviour
 
  public void triangleStratagy()
  {
-     SceneManager.LoadScene("UI BONUS ROUND");
+     SceneManager.LoadScene("homeScreen2");
  }
 }
