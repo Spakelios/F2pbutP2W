@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 
 public class Buttons : MonoBehaviour
 {
-   
+    public  GameObject box;
  public void startGame()
  {
      SceneManager.LoadScene("Proto");
@@ -31,5 +31,15 @@ public class Buttons : MonoBehaviour
  public void triangleStratagy()
  {
      SceneManager.LoadScene("homeScreen2");
+ }
+
+ public void screenpopup()
+ {
+     box.SetActive(true);
+ }
+ 
+ public void booper()
+ {
+     SceneManager.LoadScene("homeScreen3");
  }
 }
