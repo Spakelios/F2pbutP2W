@@ -2,12 +2,17 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
+
 
 public class GameManager : MonoBehaviour
 {
+    private int randomise;
+
     public static GameManager instance;
 
     public AudioSource theMusic;
@@ -33,6 +38,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI percentHitText, goodsText, greatsText, perfectsText, missesText, moneyText;
     public float totalHits, goodHits, greatHits, perfectHits, missedHits, percentHit;
 
+    public TextMeshProUGUI drops, drops2, drops3, drops4;
 
 
     private void Start()
@@ -45,7 +51,7 @@ public class GameManager : MonoBehaviour
         theMusic.Play();
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         if (!startPLaying)
         {
@@ -67,65 +73,111 @@ public class GameManager : MonoBehaviour
                 float percentHit = (totalHit / totalHits) * 100f;
 
                 percentHitText.text = percentHit.ToString("F1");
-                
 
+                switch (totalHit)
+                {
+                    case 10 :
+
+                        ShowCurrency.stings++;
+                        ShowCurrency.pucks++;
+
+                        drops.text = "Strings x1";
+                        drops2.text = "Pucks x1";
+
+                        break;
+                    
+                    case 20 :
+
+                        ShowCurrency.brokenKey++;
+                        ShowCurrency.screws++;
+                        ShowCurrency.stings++;
+
+                        drops.text = "Broken Keys x1";
+                        drops2.text = "Screws x1";
+                        drops3.text = "Strings x1";
+
+                        break;
+                    
+                    case 30 :
+
+                        ShowCurrency.brokenKey++;
+                        ShowCurrency.screws++;
+                        ShowCurrency.brokenKey++;
+                        ShowCurrency.stings++;
+
+                        drops.text = "Broken Keys x1";
+                        drops2.text = "Screws x1";
+                        drops3.text = "Strings x1";
+                        drops4.text = "Pucks x1";
+
+                        break;
+                    
+                    default:
+                        ShowCurrency.stings++;
+
+                        drops.text = "Strings x1";
+                        break;
+                }
             }
         }
     }
+
+
+
 
     public void NoteHit()
-    {
-        Debug.Log("Hit on Time");
+                {
+                    Debug.Log("Hit on Time");
 
-        if (currentMultiplier - 1 < multiplierThresholds.Length)
-        {
-            multiplierTracker++;
+                    if (currentMultiplier - 1 < multiplierThresholds.Length)
+                    {
+                        multiplierTracker++;
 
-            if (multiplierThresholds[currentMultiplier - 1] <= multiplierTracker)
-            {
-                multiplierTracker = 0;
-                currentMultiplier++;
-            }
-        }
+                        if (multiplierThresholds[currentMultiplier - 1] <= multiplierTracker)
+                        {
+                            multiplierTracker = 0;
+                            currentMultiplier++;
+                        }
+                    }
 
 
-        scoreText.text = "Score: " + currentScore;
-        multiplierText.text = "Multiplier: " + currentMultiplier;
-    }
+                    scoreText.text = "Score: " + currentScore;
+                    multiplierText.text = "Multiplier: " + currentMultiplier;
+                }
 
-    public void NormalHit()
-    {
-        currentScore += ScorePerNote;
-        
-        NoteHit();
-        ShowCurrency.totalNotes++;
-        goodHits++;
-    }
+                public void NormalHit()
+                {
+                    currentScore += ScorePerNote;
 
-    public void GoodHit()
-    {
-        currentScore += ScorePerGoodNote;
-        NoteHit();
-        greatHits++;
-        ShowCurrency.totalNotes++;
-        
-    }
+                    NoteHit();
+                    ShowCurrency.totalNotes++;
+                    goodHits++;
+                }
 
-    public void PerfectHit()
-    {
-        currentScore += ScorePerPerfectNote;
-        ShowCurrency.totalNotes++;
-        NoteHit();
-        perfectHits++;
-    }
+                public void GoodHit()
+                {
+                    currentScore += ScorePerGoodNote;
+                    NoteHit();
+                    greatHits++;
+                    ShowCurrency.totalNotes++;
 
-    public void NoteMissed()
-    {
-        Debug.Log("Missed");
-        
-        missedHits++;
-        currentMultiplier = 1;
-        multiplierText.text = "Multiplier: " + currentMultiplier;
-    }
+                }
+
+                public void PerfectHit()
+                {
+                    currentScore += ScorePerPerfectNote;
+                    ShowCurrency.totalNotes++;
+                    NoteHit();
+                    perfectHits++;
+                }
+
+                public void NoteMissed()
+                {
+                    Debug.Log("Missed");
+
+                    missedHits++;
+                    currentMultiplier = 1;
+                    multiplierText.text = "Multiplier: " + currentMultiplier;
+                }
 
 }
