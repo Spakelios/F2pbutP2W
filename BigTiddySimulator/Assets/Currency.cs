@@ -11,7 +11,7 @@ public class Currency : MonoBehaviour
     private void Start()
 
     {
-        money.text = " " + ShowCurrency.totalNotes;
+        money.text = "Notes: " + ShowCurrency.totalNotes;
     }
     
 }
