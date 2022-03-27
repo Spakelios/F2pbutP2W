@@ -44,6 +44,11 @@ public class Buttons : MonoBehaviour
      SceneManager.LoadScene("Homescreen3");
  }
  
+ public void notutorial()
+ {
+     SceneManager.LoadScene("Rythm game but not tutorial");
+ }
+
  public void screenpopback()
  {
      box.SetActive(false);

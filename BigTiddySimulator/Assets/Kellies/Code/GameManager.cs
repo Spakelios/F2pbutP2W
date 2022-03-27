@@ -78,8 +78,8 @@ public class GameManager : MonoBehaviour
                 {
                     case 20 :
 
-                        ShowCurrency.stings++;
-                        ShowCurrency.pucks++;
+                        ShowCurrency.stings += 1;
+                        ShowCurrency.pucks += 1;
 
                         drops.text = "Strings x1";
                         drops2.text = "Pucks x1";
@@ -88,9 +88,9 @@ public class GameManager : MonoBehaviour
                     
                     case 30 :
 
-                        ShowCurrency.brokenKey++;
-                        ShowCurrency.screws++;
-                        ShowCurrency.stings++;
+                        ShowCurrency.brokenKey += 1;
+                        ShowCurrency.screws += 1;
+                        ShowCurrency.stings += 1;
 
                         drops.text = "Broken Keys x1";
                         drops2.text = "Screws x1";
@@ -100,9 +100,9 @@ public class GameManager : MonoBehaviour
                     
                     case 50 :
 
-                        ShowCurrency.brokenKey++;
-                        ShowCurrency.screws++;
-                        ShowCurrency.brokenKey++;
+                        ShowCurrency.brokenKey += 1;
+                        ShowCurrency.screws += 1;
+                        ShowCurrency.brokenKey +=1 ;
                         ShowCurrency.stings++;
 
                         drops.text = "Broken Keys x1";
@@ -113,8 +113,8 @@ public class GameManager : MonoBehaviour
                         break;
                     
                     default:
-                        ShowCurrency.stings++;
-                        ShowCurrency.brokenKey++;
+                        ShowCurrency.stings += 1;
+                        ShowCurrency.brokenKey +=1;
 
                         drops.text = "Strings x1";
                         drops2.text = "Broken Keys x1";
