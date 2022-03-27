@@ -74,52 +74,30 @@ public class GameManager : MonoBehaviour
 
                 percentHitText.text = percentHit.ToString("F1");
 
-                switch (totalHit)
+                if (percentHit <= 50 && !theMusic.isPlaying)
                 {
-                    case 20 :
+                    ShowCurrency.stings += 1;
+                    ShowCurrency.pucks += 1;
 
-                        ShowCurrency.stings += 1;
-                        ShowCurrency.pucks += 1;
+                    drops.text = "Strings x1";
+                    drops2.text = "Pucks x1";
+                }
+                else if(percentHit >= 50 && !theMusic.isPlaying)
+                {
+                    ShowCurrency.brokenKey += 1;
+                    ShowCurrency.screws += 1;
+                    ShowCurrency.brokenKey +=1 ;
+                    ShowCurrency.stings += 1;
 
-                        drops.text = "Strings x1";
-                        drops2.text = "Pucks x1";
+                    drops.text = "Broken Keys x1";
+                    drops2.text = "Screws x1";
+                    drops3.text = "Strings x1";
+                    drops4.text = "Pucks x1";
+                }
 
-                        break;
-                    
-                    case 30 :
-
-                        ShowCurrency.brokenKey += 1;
-                        ShowCurrency.screws += 1;
-                        ShowCurrency.stings += 1;
-
-                        drops.text = "Broken Keys x1";
-                        drops2.text = "Screws x1";
-                        drops3.text = "Strings x1";
-
-                        break;
-                    
-                    case 50 :
-
-                        ShowCurrency.brokenKey += 1;
-                        ShowCurrency.screws += 1;
-                        ShowCurrency.brokenKey +=1 ;
-                        ShowCurrency.stings++;
-
-                        drops.text = "Broken Keys x1";
-                        drops2.text = "Screws x1";
-                        drops3.text = "Strings x1";
-                        drops4.text = "Pucks x1";
-
-                        break;
-                    
-                    default:
-                        ShowCurrency.stings += 1;
-                        ShowCurrency.brokenKey +=1;
-
-                        drops.text = "Strings x1";
-                        drops2.text = "Broken Keys x1";
-                        
-                        break;
+                else
+                {
+                    Debug.Log("oops");
                 }
             }
         }
