@@ -8,6 +8,7 @@ using UnityEngine.UIElements;
 public class Buttons : MonoBehaviour
 {
     public  GameObject box;
+    public  GameObject box2;
  public void startGame()
  {
      SceneManager.LoadScene("Proto");
@@ -42,4 +43,19 @@ public class Buttons : MonoBehaviour
  {
      SceneManager.LoadScene("Homescreen3");
  }
+ 
+ public void screenpopback()
+ {
+     box.SetActive(false);
+ }
+ 
+  public void screenback()
+  {
+      box2.SetActive(false);
+  }
+  
+  public void screen()
+  {
+      box2.SetActive(true);
+  }
 }

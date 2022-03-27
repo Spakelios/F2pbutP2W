@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour
 
                 switch (totalHit)
                 {
-                    case 10 :
+                    case 20 :
 
                         ShowCurrency.stings++;
                         ShowCurrency.pucks++;
@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour
 
                         break;
                     
-                    case 20 :
+                    case 30 :
 
                         ShowCurrency.brokenKey++;
                         ShowCurrency.screws++;
@@ -98,7 +98,7 @@ public class GameManager : MonoBehaviour
 
                         break;
                     
-                    case 30 :
+                    case 50 :
 
                         ShowCurrency.brokenKey++;
                         ShowCurrency.screws++;
@@ -114,8 +114,11 @@ public class GameManager : MonoBehaviour
                     
                     default:
                         ShowCurrency.stings++;
+                        ShowCurrency.brokenKey++;
 
                         drops.text = "Strings x1";
+                        drops2.text = "Broken Keys x1";
+                        
                         break;
                 }
             }

@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Kellies/Scenes/homeScreen2.unity
     guid: e5c8a4421bdbd284a9870b4210870318
+  - enabled: 1
+    path: Assets/Kellies/Scenes/Homescreen3.unity
+    guid: ccd6d9c6d6cb33b4789b7208be788e2a
   m_configObjects: {}

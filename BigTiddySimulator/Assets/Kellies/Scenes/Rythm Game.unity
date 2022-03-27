@@ -442,7 +442,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &61391939
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4420,6 +4420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba58aebb8a27fa74a80585c4ca65baf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  box: {fileID: 0}
 --- !u!114 &834950785
 MonoBehaviour:
   m_ObjectHideFlags: 0
