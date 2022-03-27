@@ -40,6 +40,6 @@ public class Buttons : MonoBehaviour
  
  public void booper()
  {
-     SceneManager.LoadScene("homeScreen3");
+     SceneManager.LoadScene("Homescreen3");
  }
 }
