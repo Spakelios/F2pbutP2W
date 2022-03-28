@@ -23,7 +23,7 @@ public class LevelSystem
     {
         exp += amount;
 
-        if (exp >= expToLevel)
+        while (exp >= expToLevel)
         {
             level++;
             exp -= expToLevel;
@@ -42,5 +42,16 @@ public class LevelSystem
     {
         return (float)exp / expToLevel;
     }
+
+    public int GetEXP()
+    {
+        return exp;
+    }
+
+    public int GetEXPToLevel()
+    {
+        return expToLevel;
+    }
+    
 
 }

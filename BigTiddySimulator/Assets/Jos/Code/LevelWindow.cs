@@ -12,6 +12,7 @@ public class LevelWindow : MonoBehaviour
     public Button fiveEXP;
     public Button fiftyEXP;
     public Button fivehundredEXP;
+    private LevelSystemAnimated levelSystemAnimated;
     
 
 
@@ -40,22 +41,27 @@ public class LevelWindow : MonoBehaviour
     public void SetLevelSystem(LevelSystem levelSystem)
     {
         this.levelSystem = levelSystem;
-        
-        SetLevelNumber((levelSystem.GetLvlNumber()));
-        SetExperienceBarSize(levelSystem.GetEXPNormalized());
-
-        levelSystem.OnEXPChanged += LevelSystem_OnEXPChanged;
-        levelSystem.OnLVLChanged += LevelSystem_OnLVLChanged;
     }
 
-    private void LevelSystem_OnLVLChanged(object sender, System.EventArgs e)
+    public void SetLevelSystemAnimated(LevelSystemAnimated levelSystemAnimated)
     {
-        SetLevelNumber((levelSystem.GetLvlNumber()));
+        this.levelSystemAnimated = levelSystemAnimated;
+        
+        SetLevelNumber((levelSystemAnimated.GetLvlNumber()));
+        SetExperienceBarSize(levelSystemAnimated.GetEXPNormalized());
+
+        levelSystemAnimated.OnEXPChanged += LevelSystemAnimated_OnEXPChanged;
+        levelSystemAnimated.OnLVLChanged += LevelSystemAnimated_OnLVLChanged;
+    }
+
+    private void LevelSystemAnimated_OnLVLChanged(object sender, System.EventArgs e)
+    {
+        SetLevelNumber((levelSystemAnimated.GetLvlNumber()));
     }
     
-    private void LevelSystem_OnEXPChanged(object sender, System.EventArgs e)
+    private void LevelSystemAnimated_OnEXPChanged(object sender, System.EventArgs e)
     {
-        SetExperienceBarSize((levelSystem.GetEXPNormalized()));
+        SetExperienceBarSize((levelSystemAnimated.GetEXPNormalized()));
     }
 
     void addFive()
