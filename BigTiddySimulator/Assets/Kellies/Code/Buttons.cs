@@ -9,6 +9,7 @@ public class Buttons : MonoBehaviour
 {
     public  GameObject box;
     public  GameObject box2;
+    public  GameObject box3;
  public void startGame()
  {
      SceneManager.LoadScene("Proto");
@@ -58,9 +59,15 @@ public class Buttons : MonoBehaviour
   {
       box2.SetActive(false);
   }
-  
+
   public void screen()
   {
+      box2.SetActive(true);
+  }
+
+  public void screenstuff()
+  {
+      box.SetActive(false);
       box2.SetActive(true);
   }
   
