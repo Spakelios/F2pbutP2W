@@ -9,8 +9,8 @@ public class LevelSystem
     public event EventHandler OnLVLChanged;
 
     private static readonly int[] expPerLVL = new[] {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000}; //if we wanna have a set amount of levels & set amount of EXP for each level
-    
-    private int level;
+
+    public int level;
     private int exp;
 
 

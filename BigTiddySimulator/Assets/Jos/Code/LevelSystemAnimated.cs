@@ -9,8 +9,8 @@ public class LevelSystemAnimated
     public event EventHandler OnLVLChanged;
     private LevelSystem levelSystem;
     private bool isAnimating;
-    
-    private int level;
+
+    public int level;
     private int exp;
 
     private float updateTimer;

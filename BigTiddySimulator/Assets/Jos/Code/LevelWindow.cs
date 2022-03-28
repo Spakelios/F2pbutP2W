@@ -33,7 +33,7 @@ public class LevelWindow : MonoBehaviour
         expBar.fillAmount = expNormalized;
     }
 
-    private void SetLevelNumber(int levelNumber)
+    public void SetLevelNumber(int levelNumber)
     {
         levelText.text = "Level\n" + (levelNumber + 1);
     }
