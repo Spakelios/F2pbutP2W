@@ -39,8 +39,8 @@ just follow my lead!
 {Icon("Sad")}
 Yes! I am a very emotionally intelligent triangle!
 
-{Name("Man With Instrument")}
-{Icon("simp")}
+{Name("Lady with Flute")}
+{Icon("flute2.0")}
 They are. Helped me through many a rejection
 Real Sigma Triangle
 
