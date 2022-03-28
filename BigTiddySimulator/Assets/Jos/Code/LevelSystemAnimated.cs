@@ -12,7 +12,6 @@ public class LevelSystemAnimated
     
     private int level;
     private int exp;
-    private int expToLevel;
 
     private float updateTimer;
     private float updateTimerMax;
@@ -35,8 +34,7 @@ public class LevelSystemAnimated
 
         level = levelSystem.GetLvlNumber();
         exp = levelSystem.GetEXP();
-        expToLevel = levelSystem.GetEXPToLevel();
-        
+
         levelSystem.OnEXPChanged += LevelSystem_OnEXPChanged;
         levelSystem.OnLVLChanged += LevelSystem_OnLVLChanged;
     }
@@ -86,7 +84,7 @@ public class LevelSystemAnimated
     {
         exp++;
         
-        if (exp >= expToLevel)
+        if (exp >= levelSystem.GetEXPToLevel(level))
         {
             level++;
             exp = 0;
@@ -102,7 +100,14 @@ public class LevelSystemAnimated
 
     public float GetEXPNormalized()
     {
-        return (float)exp / expToLevel;
+        if (levelSystem.IsMaxLVL(level))
+        {
+            return 1f;
+        }
+        else
+        {
+            return (float)exp / levelSystem.GetEXPToLevel(level);
+        }
     }
 
 }
