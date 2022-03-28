@@ -36,6 +36,7 @@ public class LevelWindow : MonoBehaviour
     public void SetLevelNumber(int levelNumber)
     {
         levelText.text = "Level\n" + (levelNumber + 1);
+        ShowCurrency.level = levelNumber + 1;
     }
 
     public void SetLevelSystem(LevelSystem levelSystem)
