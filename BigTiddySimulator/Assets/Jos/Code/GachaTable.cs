@@ -48,6 +48,7 @@ public class GachaTable : MonoBehaviour
         {
             randomDraw = UnityEngine.Random.Range(0, total);
             currencyManager.totalNotes -= pullPrice;
+            ShowCurrency.totalNotes -= pullPrice;
 
             for (int i = 0; i < gachaRates.Length; i++)
 

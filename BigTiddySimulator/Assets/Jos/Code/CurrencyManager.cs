@@ -16,11 +16,13 @@ public class CurrencyManager : MonoBehaviour
 
     private void Start()
     {
+        totalNotes = ShowCurrency.totalNotes;
         noteCounter.text = "Music Notes: " + totalNotes;
     }
 
     private void Update()
     {
+        totalNotes = ShowCurrency.totalNotes;
         noteCounter.text = "Music Notes: " + totalNotes; 
     }
 }
