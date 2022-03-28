@@ -217,6 +217,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &974748304 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7523021852102236306, guid: 519ce19c33571c048ad9e427767c0b26, type: 3}
+  m_PrefabInstance: {fileID: 7523021852972087153}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1014764950 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7523021853806774595, guid: 519ce19c33571c048ad9e427767c0b26, type: 3}
+  m_PrefabInstance: {fileID: 7523021852972087153}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1872778719
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,7 +375,7 @@ PrefabInstance:
       objectReference: {fileID: 49765198}
     - target: {fileID: 1729857905405329275, guid: a97b483e3b0622647843c52a64bfc66e, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1729857905405329275, guid: a97b483e3b0622647843c52a64bfc66e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -422,7 +444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7523021852591161804, guid: 519ce19c33571c048ad9e427767c0b26, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7523021852591161804, guid: 519ce19c33571c048ad9e427767c0b26, type: 3}
       propertyPath: m_AnchorMax.x
@@ -496,5 +518,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7523021852924554303, guid: 519ce19c33571c048ad9e427767c0b26, type: 3}
+      propertyPath: expBar
+      value: 
+      objectReference: {fileID: 974748304}
+    - target: {fileID: 7523021852924554303, guid: 519ce19c33571c048ad9e427767c0b26, type: 3}
+      propertyPath: levelText
+      value: 
+      objectReference: {fileID: 1014764950}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 519ce19c33571c048ad9e427767c0b26, type: 3}

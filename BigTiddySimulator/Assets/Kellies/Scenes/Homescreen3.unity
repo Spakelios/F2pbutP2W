@@ -2361,7 +2361,7 @@ GameObject:
   - component: {fileID: 388839199}
   - component: {fileID: 388839200}
   m_Layer: 5
-  m_Name: LevelWindow (1)
+  m_Name: LevelWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2405,6 +2405,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 402199a2fdc02e14485c0b4fee67242f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelText: {fileID: 974685796}
+  expBar: {fileID: 2053662678}
   fiveEXP: {fileID: 1719709428}
   fiftyEXP: {fileID: 1144825918}
   fivehundredEXP: {fileID: 437865602}
@@ -7104,6 +7106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 402199a2fdc02e14485c0b4fee67242f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelText: {fileID: 0}
+  expBar: {fileID: 0}
   fiveEXP: {fileID: 1832021485}
   fiftyEXP: {fileID: 884145546}
   fivehundredEXP: {fileID: 586601417}
