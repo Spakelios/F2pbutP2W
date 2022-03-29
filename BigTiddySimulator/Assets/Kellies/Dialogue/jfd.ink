@@ -17,8 +17,8 @@ Hello!! Please help me!!
 please!!!
 I need to prove this place is worth something!
 
-{Name("Man With Instrument")}
-{Icon("simp")}
+{Name("Lady with Flute")}
+{Icon("Flute2.0")}
 
 that would be kinda poggers if you did
 
@@ -40,7 +40,7 @@ just follow my lead!
 Yes! I am a very emotionally intelligent triangle!
 
 {Name("Lady with Flute")}
-{Icon("flute2.0")}
+{Icon("Flute2.0")}
 They are. Helped me through many a rejection
 Real Sigma Triangle
 
