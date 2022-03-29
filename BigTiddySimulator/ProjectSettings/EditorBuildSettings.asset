@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Kellies/Scenes/Rythm game but not tutorial.unity
     guid: 1b20b23d6c3c7064b9977083c7bd3c31
+  - enabled: 1
+    path: Assets/Jos/Scenes/Rhythm Game 2.unity
+    guid: 64397fd9175d27d4da555f681be6bd0e
   m_configObjects: {}
