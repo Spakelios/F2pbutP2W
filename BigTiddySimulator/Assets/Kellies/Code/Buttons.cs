@@ -70,5 +70,10 @@ public class Buttons : MonoBehaviour
       box.SetActive(false);
       box2.SetActive(true);
   }
+
+  public void level2()
+  {
+      SceneManager.LoadScene("Rhythm Game 2");
+  }
   
 }
