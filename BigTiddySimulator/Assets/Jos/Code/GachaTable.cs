@@ -61,6 +61,7 @@ public class GachaTable : MonoBehaviour
                         Invoke(nameof(Deactivate), 1.0f);
                     }
                     
+                    
                     return;
                     
                     
