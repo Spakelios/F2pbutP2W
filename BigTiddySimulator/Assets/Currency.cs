@@ -10,7 +10,7 @@ public class Currency : MonoBehaviour
     public TextMeshProUGUI money;
     public TextMeshProUGUI Level;
     public Button button;
-    public GameObject ponytail, glasses,wall;
+    public Animator ponytail, glasses,wall;
     
 
     private void Update()
@@ -33,17 +33,17 @@ public class Currency : MonoBehaviour
         
         if (ShowCurrency.ponytail == 2)
         {
-            ponytail.GetComponent<Image>().color = new Color32(255,255,225,100);
+            ponytail.GetComponent<Animator>().Play("organSwap");
         }
         
         if (ShowCurrency.wall == 2)
         {
-            wall.GetComponent<Image>().color = new Color32(255,255,225,100);
+            wall.GetComponent<Animator>().Play("trumpetSwap");
         }
         
         if (ShowCurrency.glasses == 2)
         {
-            glasses.GetComponent<Image>().color = new Color32(255,255,225,100);
+            glasses.GetComponent<Animator>().Play("palletteSwap");
         }
 }
 }

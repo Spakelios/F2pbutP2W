@@ -12,7 +12,7 @@ public class Buttons : MonoBehaviour
     public  GameObject box3;
  public void startGame()
  {
-     SceneManager.LoadScene("Proto");
+     SceneManager.LoadScene("Rhythm Game 2");
  }
 
  public void gachaTime()
@@ -64,6 +64,7 @@ public class Buttons : MonoBehaviour
   {
       box2.SetActive(true);
   }
+
 
   public void screenstuff()
   {

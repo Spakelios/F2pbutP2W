@@ -60,7 +60,19 @@ public class GachaTable : MonoBehaviour
                     {
                         Invoke(nameof(Deactivate), 1.0f);
                     }
-                    
+
+                    if (commonPool.activeInHierarchy)
+                    {
+                        ShowCurrency.glasses += 1;
+                    }
+                    else if (uncommonPool.activeInHierarchy)
+                    {
+                        ShowCurrency.wall += 1;
+                    }
+                    else if (rarePool.activeInHierarchy)
+                    {
+                        ShowCurrency.ponytail += 1;
+                    }
                     
                     return;
                     

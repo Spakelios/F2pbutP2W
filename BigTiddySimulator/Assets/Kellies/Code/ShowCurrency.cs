@@ -9,5 +9,5 @@ public class ShowCurrency : ScriptableObject
     
     public static int level = 1;
 
-    public static int wall, ponytail, glasses;
+    public static int wall = 1, ponytail = 1, glasses = 1;
 }
