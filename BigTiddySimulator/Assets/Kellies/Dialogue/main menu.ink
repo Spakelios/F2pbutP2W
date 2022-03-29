@@ -1,9 +1,10 @@
 EXTERNAL Name(charName)
 EXTERNAL Icon(charName)
 
-{Name("Triangle-Chan")}
-{Icon("Happy")}
+{Name("Claire Annette")}
+{Icon("clarinet")}
 
-Right! Hit the start button to begin!
+Lets see what you're made of,
+Hit the start button to begin.
 
 -> END
