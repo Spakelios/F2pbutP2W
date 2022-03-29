@@ -6,8 +6,8 @@ using TMPro;
 
 public class LevelWindow : MonoBehaviour
 {
-    private TMP_Text levelText;
-    private Image expBar;
+    public TMP_Text levelText;
+    public Image expBar;
     private LevelSystem levelSystem;
     public Button fiveEXP;
     public Button fiftyEXP;
@@ -18,8 +18,8 @@ public class LevelWindow : MonoBehaviour
 
     private void Awake()
     {
-        levelText = transform.Find("Level").GetComponent<TextMeshProUGUI>();
-        expBar = transform.Find("EXP Bar").GetComponent<Image>();
+        //levelText = transform.Find("Level").GetComponent<TextMeshProUGUI>();
+        //expBar = transform.Find("EXP Bar").GetComponent<Image>();
         
         fiveEXP.onClick.AddListener(addFive);
         fiftyEXP.onClick.AddListener(addFifty);
