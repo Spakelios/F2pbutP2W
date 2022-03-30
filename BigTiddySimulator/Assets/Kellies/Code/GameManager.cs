@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
                     ShowCurrency.pucks += 1;
 
                     drops.text = "Strings x1";
-                    drops2.text = "Pucks x1";
+                    drops2.text = "Picks x1";
                 }
                 else if(percentHit >= 50 && !theMusic.isPlaying)
                 {
@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
                     drops.text = "Broken Keys x1";
                     drops2.text = "Screws x1";
                     drops3.text = "Strings x1";
-                    drops4.text = "Pucks x1";
+                    drops4.text = "Picks x1";
                 }
 
                 else
