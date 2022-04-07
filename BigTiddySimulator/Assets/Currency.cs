@@ -31,17 +31,17 @@ public class Currency : MonoBehaviour
         }
         
         
-        if (ShowCurrency.ponytail == 2)
+        if (ShowCurrency.ponytail >= 2)
         {
             ponytail.GetComponent<Animator>().Play("organSwap");
         }
         
-        if (ShowCurrency.wall == 2)
+        if (ShowCurrency.wall >= 2)
         {
             wall.GetComponent<Animator>().Play("trumpetSwap");
         }
         
-        if (ShowCurrency.glasses == 2)
+        if (ShowCurrency.glasses >= 2)
         {
             glasses.GetComponent<Animator>().Play("palletteSwap");
         }

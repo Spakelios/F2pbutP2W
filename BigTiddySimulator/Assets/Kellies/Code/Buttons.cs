@@ -27,7 +27,7 @@ public class Buttons : MonoBehaviour
 
  public void gaymersGayming()
  {
-     SceneManager.LoadScene("Rythm Game");
+     SceneManager.LoadScene("Rhythm Tutorial");
  }
 
  public void triangleStratagy()
@@ -45,9 +45,9 @@ public class Buttons : MonoBehaviour
      SceneManager.LoadScene("Homescreen3");
  }
  
- public void notutorial()
+ public void levelTwo()
  {
-     SceneManager.LoadScene("Rythm game but not tutorial");
+     SceneManager.LoadScene("Level 2");
  }
 
  public void screenpopback()
@@ -72,9 +72,9 @@ public class Buttons : MonoBehaviour
       box2.SetActive(true);
   }
 
-  public void level2()
+  public void levelOne()
   {
-      SceneManager.LoadScene("Rhythm Game 2");
+      SceneManager.LoadScene("Level 1");
   }
   
 }
