@@ -16,6 +16,7 @@ public class DialogueTrigger : MonoBehaviour
     public TMP_Text dialogueBox;
     public TMP_Text nameTag;
 
+    public Image backChange;
     public Image characterIcon;
     [SerializeField] private GridLayoutGroup choiceHolder;
     [SerializeField] private Button choiceButtonPrefab;
@@ -58,22 +59,23 @@ public class DialogueTrigger : MonoBehaviour
         }
         else
         {
-            // dialogueBox.text = ".....";
-            SceneManager.LoadScene("UI BONUS ROUND");
+            dialogueBox.text = ".....";
+            // SceneManager.LoadScene("UI BONUS ROUND");
         }
     }
 
     public void DisplayChoices()
     {
         if (choiceHolder.GetComponentsInChildren<Button>().Length > 0) return;
-        
+
         for (int i = 0; i < _StoryScript.currentChoices.Count; i++)
         {
             var choice = _StoryScript.currentChoices[i];
             var button = CreateChoiceButton(choice.text);
-            
+
             button.onClick.AddListener(() => onClickChoiceButton(choice));
         }
+
 
     }
 
