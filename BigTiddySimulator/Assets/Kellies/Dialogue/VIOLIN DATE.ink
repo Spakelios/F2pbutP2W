@@ -1,6 +1,6 @@
 EXTERNAL Name(charName)
 EXTERNAL Icon(charName)
-EXTERNAL BackChange(charName)
+EXTERNAL Back(CharName)
 
 {Name("Violet")}
 {Icon("violin")}
@@ -63,7 +63,7 @@ So getting out like this is quite the treat!
 
 * [Your mothers ill?] -> seven
 
-* [oh i see, Glad to help] -> eight
+* [oh i see, Glad to help] -> seven
 
 
 === six ===
@@ -77,9 +77,57 @@ Rather then laziness, only so many hours in a day after all.
 
 === seven ===
 
-awooga -> six
+{Name("Violet")}
+{Icon("violin")}
+It's exactly as it sounds, theres not much too say on the matter
+I simply have to continue forward regardless.
+Even if I can't take every oppurtunity
 
-=== eight ==
+* [ .... ]-> eight
+
+* [ That's quite Impressive ] -> eight
+
+=== eight ===
+{Name("Violet")}
+{Icon("violin")}
+It is what it is, my apologies for rambling. 
+
+* [It's not problem] -> ten
+
+* [Thank you for telling me] -> ten
+
+=== ten === 
+{Name("Violet")}
+{Icon("violin")}
+(She looks to the couples around and notices picnics seem to be rather popular
+in this park. She seems to be eyeing an ice cream truck nearby)
+
+*[Get her an Ice cream] -> eleven
+
+*[well, its getting late. We better head back] -> tweleve
+
+=== eleven ===
+
+{Name("You")}
+(You hand her an Ice cream)
+
+{Name("Violet")}
+{Icon("violin")}
+{Back("powercouple")}
+Oh my! How did you know?
+oh thank you! Lets sit for a bit shall we?
+
+-> END
+
+=== tweleve ===
+{Name("Violet")}
+{Icon("violin")}
+I see, Its been a pleasure.
+See you tomorrow
+
+-> END
+
+
 
 
  
