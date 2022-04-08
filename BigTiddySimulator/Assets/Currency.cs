@@ -29,53 +29,48 @@ public class Currency : MonoBehaviour
         {
             button.interactable = false;
         }
-        IHateIt();
-
-    }
-
-    private void IHateIt()
-    {
+        
         if (ShowCurrency.ponytail >= 2)
         {
             ponytail.GetComponent<Animator>().Play("organSwap");
         }
-        else if (ShowCurrency.wall >= 2)
+        if (ShowCurrency.wall >= 2)
         {
             wall.GetComponent<Animator>().Play("trumpetSwap");
-        }
-        else if (ShowCurrency.glasses >= 2)
+        } 
+        if (ShowCurrency.glasses >= 2)
         {
             glasses.GetComponent<Animator>().Play("palletteSwap");
         }
-        else if (ShowCurrency.harp >= 2)
+         if (ShowCurrency.harp >= 2)
         {
             harp.GetComponent<Animator>().Play("harp");
         }
-        else if (ShowCurrency.bass >= 2)
+         if (ShowCurrency.bass >= 2)
         {
             bass.GetComponent<Animator>().Play("bass");
         }
-        else if (ShowCurrency.flute >= 2)
+         if (ShowCurrency.flute >= 2)
         {
             flute.GetComponent<Animator>().Play("flute");
         }
-        else if (ShowCurrency.himbo >= 2)
+         if (ShowCurrency.himbo >= 2)
         {
             himbo.GetComponent<Animator>().Play("himbo");
         }
-        else if (ShowCurrency.fhorn >= 2)
+         if (ShowCurrency.fhorn >= 2)
         {
             fhorn.GetComponent<Animator>().Play("fhorn");
         }
-        else if (ShowCurrency.violin >= 2)
+         if (ShowCurrency.violin >= 2)
         {
             violin.GetComponent<Animator>().Play("violin");
         }
-        else if (ShowCurrency.bowl >= 2)
+         if (ShowCurrency.bowl >= 2)
         {
             bowl.GetComponent<Animator>().Play("bowl4");
         }
-        else if (ShowCurrency.piano >= 2)
+         if (ShowCurrency.piano >= 2)
         {
             piano.GetComponent<Animator>().Play("piano");
         }
