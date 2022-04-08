@@ -16377,7 +16377,7 @@ MonoBehaviour:
   total: 0
   randomDraw: 0
   funnyButton: {fileID: 1933356719}
-  pullPrice: 0
+  pullPrice: 50
   currencyManager: {fileID: 0}
   clarinet: {fileID: 1898662109}
   cymbals: {fileID: 1744591312585175880}
