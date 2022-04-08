@@ -2,10 +2,10 @@ EXTERNAL Name(charName)
 EXTERNAL Icon(charName)
 
 {Name("You")}
-.... (You enter an unfamilliar building, looking down at the letter in your hand
+(You enter an unfamilliar building, looking down at the letter in your hand)
 
 {Name("You")}
-It confirms this is the right address, you walk toward the sound of chattering)
+(It confirms this is the right address, you walk toward the sound of chattering)
 
 {Name("Triangle-Chan")}
 {Icon("Happy")}
@@ -22,31 +22,30 @@ Is that even an option? Our funding is nearly completely depleted AND mostly due
 
 Hardly helpful to relive the past Claire! We must move forward into the future and as for why we're here today-
 
-{Name("Lady with Flute")}
+{Name("Allegra")}
 {Icon("Flute2.0")}
 We're not going to close down are we?? I can't afford my rent as it is and no other orchestras gonna hire me after this!!
 
-{Name("Lady with Flute")}
+{Name("Allegra")}
 {Icon("Flute2.0")}
 we were never prestigous but we had character! I'm gonna lose my house, my cat-
 
 {Name("Violet")}
 {Icon("violin")}
-Remember your breathing Flu you're a muscian not a sprinter please calm yourself.
+Remember your breathing Allegra, you're a musician not a sprinter please calm yourself.
 
-{Name("Lady with Flute")}
+{Name("Allegra")}
 {Icon("Flute2.0")}
 s-sorry-
 
-{Name("Himbo")}
+{Name("Felix")}
 {Icon("percussion")}
 
 Oh don't be so nervous! 
-It can't get worse if we're already at
-rock bottom! *pogs sadly* ;(
+It can't get worse if we're already at rock bottom!
 
 
-{Name("Beeg Man")}
+{Name("Reed")}
 {Icon("fhorn")}
 So we're here because-?
 
@@ -54,7 +53,7 @@ So we're here because-?
 {Icon("Happy")}
 Yes of course! I'm here to Introduce you all to our new conductor! 
 
-{Name("P o n y t a i l")}
+{Name("Arco")}
 {Icon("organ")}
 So that's the horrified person behind you, Tri-Chan? 
 
@@ -62,7 +61,7 @@ So that's the horrified person behind you, Tri-Chan?
 
 .... (You Nod)
 
-{Name("Beeg Man")}
+{Name("Reed")}
 {Icon("fhorn")}
 I see, well then it's up to you to save us Conductor! 
 
@@ -70,7 +69,7 @@ I see, well then it's up to you to save us Conductor!
 {Icon("violin")}
 Horrid way to start, the poor things already nervous!
 
-{Name("Lady with Flute")}
+{Name("Allegra")}
 {Icon("Flute2.0")}
 P-please save us i need the money to feed my cat!
 
@@ -87,7 +86,7 @@ just follow Claire's lead!
 
 * [Who said i'd help?]
 
-{Name("P o n y t a i l")}
+{Name("Arco")}
 {Icon("organ")}
 
 We did!

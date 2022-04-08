@@ -5481,6 +5481,14 @@ MonoBehaviour:
   ponytail: {fileID: 646817912}
   glasses: {fileID: 1898662109}
   wall: {fileID: 873461197}
+  flute: {fileID: 0}
+  fhorn: {fileID: 0}
+  violin: {fileID: 0}
+  bowl: {fileID: 0}
+  piano: {fileID: 0}
+  bass: {fileID: 0}
+  himbo: {fileID: 0}
+  harp: {fileID: 0}
 --- !u!1 &873461197 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8845833665016153212, guid: 9d328bdae3aedab41ad68dd721beb8a6, type: 3}

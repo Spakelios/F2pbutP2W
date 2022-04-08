@@ -5488,6 +5488,78 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &690415254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 690415257}
+  - component: {fileID: 690415256}
+  - component: {fileID: 690415255}
+  m_Layer: 0
+  m_Name: currency
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &690415255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690415254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8212693b09ad2428bf501474938b98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: {fileID: 1259773669}
+  Level: {fileID: 179787334}
+  button: {fileID: 4464030}
+  ponytail: {fileID: 1953640745}
+  glasses: {fileID: 637836616}
+  wall: {fileID: 873700162}
+  flute: {fileID: 1863788073}
+  fhorn: {fileID: 463028640}
+  violin: {fileID: 2039658256}
+  bowl: {fileID: 1431659142}
+  piano: {fileID: 1536071119}
+  bass: {fileID: 1548629803}
+  himbo: {fileID: 562486628}
+  harp: {fileID: 973545674}
+--- !u!114 &690415256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690415254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b30db5345c1f2a449b91cffb9781167d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteCounter: {fileID: 0}
+  totalNotes: 500
+--- !u!4 &690415257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690415254}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 427.47845, y: 207.48933, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &725176576
 GameObject:
   m_ObjectHideFlags: 0
@@ -9028,7 +9100,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 2b1690adbf54ce7439f441b930974ac0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13375,6 +13447,14 @@ MonoBehaviour:
   ponytail: {fileID: 1953640745}
   glasses: {fileID: 637836616}
   wall: {fileID: 873700162}
+  flute: {fileID: 0}
+  fhorn: {fileID: 0}
+  violin: {fileID: 0}
+  bowl: {fileID: 0}
+  piano: {fileID: 0}
+  bass: {fileID: 0}
+  himbo: {fileID: 0}
+  harp: {fileID: 0}
 --- !u!4 &2038690279
 Transform:
   m_ObjectHideFlags: 0

@@ -93,48 +93,48 @@ public class GachaTable : MonoBehaviour
                     {
                         Invoke(nameof(Deactivate), 1.0f);
                     }
-
+                    
                     if (clarinet.activeInHierarchy)
                     {
-                        ShowCurrency.glasses += 1;
+                        ShowCurrency.glasses += 2;
                     }
-                    else if (cymbals.activeInHierarchy) 
+                    if (cymbals.activeInHierarchy) 
                     {
                         ShowCurrency.wall += 1;
                     }
-                    else if (organ.activeInHierarchy) 
+                    if (organ.activeInHierarchy) 
                     {
                         ShowCurrency.ponytail += 1;
                     }   
-                    else if (trombone.activeInHierarchy) 
+                     if (trombone.activeInHierarchy) 
                     {
                         ShowCurrency.bowl += 1;
                     }
-                    else if (harp.activeInHierarchy) 
+                     if (harp.activeInHierarchy) 
                     {
                         ShowCurrency.harp += 1;
                     }
-                    else if (flute.activeInHierarchy) 
+                     if (flute.activeInHierarchy) 
                     {
                         ShowCurrency.flute += 1;
                     }
-                    else if (piano.activeInHierarchy) 
+                     if (piano.activeInHierarchy) 
                     {
                         ShowCurrency.piano += 1;
                     }
-                    else if (doubleBass.activeInHierarchy) 
+                    if (doubleBass.activeInHierarchy) 
                     {
                         ShowCurrency.bass += 1;
                     }
-                    else if (frenchHorn.activeInHierarchy) 
+                    if (frenchHorn.activeInHierarchy) 
                     {
                         ShowCurrency.fhorn += 1;
                     }
-                    else if (violin.activeInHierarchy) 
+                    if (violin.activeInHierarchy) 
                     {
                         ShowCurrency.violin += 1;
                     }
-                    else if (xylophone.activeInHierarchy) 
+                     if (xylophone.activeInHierarchy) 
                     {
                         ShowCurrency.himbo += 1;
                     }
