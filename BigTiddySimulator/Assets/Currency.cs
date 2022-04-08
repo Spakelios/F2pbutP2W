@@ -10,7 +10,7 @@ public class Currency : MonoBehaviour
     public TextMeshProUGUI money;
     public TextMeshProUGUI Level;
     public Button button;
-    public Animator ponytail, glasses,wall;
+    public Animator ponytail, glasses,wall, flute, fhorn , violin , bowl , piano , bass, himbo , harp;
     
 
     private void Update()
@@ -29,21 +29,56 @@ public class Currency : MonoBehaviour
         {
             button.interactable = false;
         }
-        
-        
+        IHateIt();
+
+    }
+
+    private void IHateIt()
+    {
         if (ShowCurrency.ponytail >= 2)
         {
             ponytail.GetComponent<Animator>().Play("organSwap");
         }
-        
-        if (ShowCurrency.wall >= 2)
+        else if (ShowCurrency.wall >= 2)
         {
             wall.GetComponent<Animator>().Play("trumpetSwap");
         }
-        
-        if (ShowCurrency.glasses >= 2)
+        else if (ShowCurrency.glasses >= 2)
         {
             glasses.GetComponent<Animator>().Play("palletteSwap");
         }
+        else if (ShowCurrency.harp >= 2)
+        {
+            harp.GetComponent<Animator>().Play("harp");
+        }
+        else if (ShowCurrency.bass >= 2)
+        {
+            bass.GetComponent<Animator>().Play("bass");
+        }
+        else if (ShowCurrency.flute >= 2)
+        {
+            flute.GetComponent<Animator>().Play("flute");
+        }
+        else if (ShowCurrency.himbo >= 2)
+        {
+            himbo.GetComponent<Animator>().Play("himbo");
+        }
+        else if (ShowCurrency.fhorn >= 2)
+        {
+            fhorn.GetComponent<Animator>().Play("fhorn");
+        }
+        else if (ShowCurrency.violin >= 2)
+        {
+            violin.GetComponent<Animator>().Play("violin");
+        }
+        else if (ShowCurrency.bowl >= 2)
+        {
+            bowl.GetComponent<Animator>().Play("bowl4");
+        }
+        else if (ShowCurrency.piano >= 2)
+        {
+            piano.GetComponent<Animator>().Play("piano");
+        }
+    }
 }
-}
+

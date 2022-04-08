@@ -98,13 +98,45 @@ public class GachaTable : MonoBehaviour
                     {
                         ShowCurrency.glasses += 1;
                     }
-                    else if (frenchHorn.activeInHierarchy) //used to be for stock image
+                    else if (cymbals.activeInHierarchy) 
                     {
                         ShowCurrency.wall += 1;
                     }
-                    else if (xylophone.activeInHierarchy) //used to be for organ
+                    else if (organ.activeInHierarchy) 
                     {
                         ShowCurrency.ponytail += 1;
+                    }   
+                    else if (trombone.activeInHierarchy) 
+                    {
+                        ShowCurrency.bowl += 1;
+                    }
+                    else if (harp.activeInHierarchy) 
+                    {
+                        ShowCurrency.harp += 1;
+                    }
+                    else if (flute.activeInHierarchy) 
+                    {
+                        ShowCurrency.flute += 1;
+                    }
+                    else if (piano.activeInHierarchy) 
+                    {
+                        ShowCurrency.piano += 1;
+                    }
+                    else if (doubleBass.activeInHierarchy) 
+                    {
+                        ShowCurrency.bass += 1;
+                    }
+                    else if (frenchHorn.activeInHierarchy) 
+                    {
+                        ShowCurrency.fhorn += 1;
+                    }
+                    else if (violin.activeInHierarchy) 
+                    {
+                        ShowCurrency.violin += 1;
+                    }
+                    else if (xylophone.activeInHierarchy) 
+                    {
+                        ShowCurrency.himbo += 1;
                     }
                     
                     return;
