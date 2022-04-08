@@ -16,8 +16,8 @@ public class LevelSystem
 
     public LevelSystem()
     {
-        level = 0;
-        exp = 0;
+        ShowCurrency.level = 0;
+        ShowCurrency.exp = 0;
     }
 
     public void AddExp(int amount)
@@ -29,7 +29,7 @@ public class LevelSystem
             while (!IsMaxLVL() && exp >= GetEXPToLevel(level))
             {
                 exp -= GetEXPToLevel(level);
-                level++;
+                ShowCurrency.level++;
                 if (OnLVLChanged != null) OnLVLChanged(this, EventArgs.Empty);
             }
 

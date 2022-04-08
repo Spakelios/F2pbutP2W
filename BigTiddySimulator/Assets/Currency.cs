@@ -13,6 +13,7 @@ public class Currency : MonoBehaviour
     public Animator ponytail, glasses,wall, flute, fhorn , violin , bowl , piano , bass, himbo , harp;
     public Button viola;
     public Button himbos;
+    public Button arco;
 
     private void Update()
     {
@@ -22,7 +23,7 @@ public class Currency : MonoBehaviour
             Level.text = "Level: " + ShowCurrency.level;
         }
 
-        if (ShowCurrency.level == 3)
+        if (ShowCurrency.level >= 3)
         {
             button.interactable = true;
         }
@@ -34,6 +35,11 @@ public class Currency : MonoBehaviour
         if (ShowCurrency.ponytail >= 2)
         {
             ponytail.GetComponent<Animator>().Play("organSwap");
+            arco.interactable = true;
+        }
+        else
+        {
+            arco.interactable = false;
         }
         if (ShowCurrency.wall >= 2)
         {

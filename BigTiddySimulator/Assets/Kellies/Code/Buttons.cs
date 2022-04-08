@@ -95,4 +95,9 @@ public class Buttons : MonoBehaviour
     {
         SceneManager.LoadScene("so you wanna date the violin");
     }
+    
+    public void levelThree()
+    {
+        SceneManager.LoadScene("Level 3");
+    }
 }
