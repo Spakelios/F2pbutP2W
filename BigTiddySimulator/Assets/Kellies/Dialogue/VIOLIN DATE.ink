@@ -92,7 +92,7 @@ Even if I can't take every oppurtunity
 {Icon("violin")}
 It is what it is, my apologies for rambling. 
 
-* [It's not problem] -> ten
+* [It's not a problem] -> ten
 
 * [Thank you for telling me] -> ten
 
@@ -113,7 +113,7 @@ in this park. She seems to be eyeing an ice cream truck nearby)
 
 {Name("Violet")}
 {Icon("violin")}
-{Back("powercouple")}
+{Back("violinice")}
 Oh my! How did you know?
 oh thank you! Lets sit for a bit shall we?
 
