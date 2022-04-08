@@ -39,7 +39,7 @@ Remember your breathing Allegra, you're a musician not a sprinter please calm yo
 s-sorry-
 
 {Name("Felix")}
-{Icon("percussion")}
+{Icon("Xylophone")}
 
 Oh don't be so nervous! 
 It can't get worse if we're already at rock bottom!
@@ -78,18 +78,11 @@ P-please save us i need the money to feed my cat!
 Quiet! We should see how well they do first! No putting your hopes into a faceless stranger just yet!
 
 
-* [how can i-?]
 {Name("Triangle-Chan")}
 {Icon("Happy")}
 Thank you! Ill show you exactly what to do!
 just follow Claire's lead!
 
-* [Who said i'd help?]
-
-{Name("Arco")}
-{Icon("organ")}
-
-We did!
 
 
 
