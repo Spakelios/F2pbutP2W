@@ -16,9 +16,13 @@ public class DialogueTrigger : MonoBehaviour
     public TMP_Text dialogueBox;
     public TMP_Text nameTag;
 
+    
     public Image characterIcon;
     [SerializeField] private GridLayoutGroup choiceHolder;
     [SerializeField] private Button choiceButtonPrefab;
+    public GameObject butt;
+    public Image backgroundIcon;
+    
     
     void Start()
     {
@@ -39,7 +43,7 @@ public class DialogueTrigger : MonoBehaviour
 
         _StoryScript.BindExternalFunction("Name", (string charName) => ChangeName(charName));
         _StoryScript.BindExternalFunction("Icon", (string charName) => CharacterIcon(charName));
-
+        _StoryScript.BindExternalFunction("Back", (string charName) => BackIcon(charName));
         DisplayNextLine();
         
     }
@@ -59,21 +63,23 @@ public class DialogueTrigger : MonoBehaviour
         else
         {
             // dialogueBox.text = ".....";
-            SceneManager.LoadScene("UI BONUS ROUND");
+            // SceneManager.LoadScene("UI BONUS ROUND");
+            butt.SetActive(true);
         }
     }
 
     public void DisplayChoices()
     {
         if (choiceHolder.GetComponentsInChildren<Button>().Length > 0) return;
-        
+
         for (int i = 0; i < _StoryScript.currentChoices.Count; i++)
         {
             var choice = _StoryScript.currentChoices[i];
             var button = CreateChoiceButton(choice.text);
-            
+
             button.onClick.AddListener(() => onClickChoiceButton(choice));
         }
+
 
     }
 
@@ -119,4 +125,9 @@ public class DialogueTrigger : MonoBehaviour
         characterIcon.sprite = charIcon;
     }
 
+    public void BackIcon(string name) 
+    {
+        var backIcon = Resources.Load<Sprite>("characterIcons/" + name);
+        backgroundIcon.sprite = backIcon;
+    }
 }

@@ -69,12 +69,27 @@ public class Buttons : MonoBehaviour
   public void screenstuff()
   {
       box.SetActive(false);
-      box2.SetActive(true);
+      box2.SetActive(false);
+      box3.SetActive(true);
   }
 
   public void levelOne()
   {
       SceneManager.LoadScene("Level 1");
   }
+  public void screenstuffs()
+  {
+      box.SetActive(false);
+      box2.SetActive(true);
+      box3.SetActive(true);
+  }
   
+  public void level()
+  {
+      SceneManager.LoadScene("UI BONUS ROUND");
+  }
+  public void levelTwos()
+  {
+      SceneManager.LoadScene("so you wanna date the violin");
+  }
 }
