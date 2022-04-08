@@ -2,11 +2,9 @@ EXTERNAL Name(charName)
 EXTERNAL Icon(charName)
 
 {Name("You")}
-{Icon("HIM")}
 .... (You enter an unfamilliar building, looking down at the letter in your hand
 
 {Name("You")}
-{Icon("HIM")}
 It confirms this is the right address, you walk toward the sound of chattering)
 
 {Name("Triangle-Chan")}
@@ -85,7 +83,7 @@ Quiet! We should see how well they do first! No putting your hopes into a facele
 {Name("Triangle-Chan")}
 {Icon("Happy")}
 Thank you! Ill show you exactly what to do!
-just follow my lead!
+just follow Claire's lead!
 
 * [Who said i'd help?]
 
