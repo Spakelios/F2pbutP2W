@@ -15903,7 +15903,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Price: 50 Music Notes'
+  m_text: 'Price: 30 Music Notes'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16377,7 +16377,7 @@ MonoBehaviour:
   total: 0
   randomDraw: 0
   funnyButton: {fileID: 1933356719}
-  pullPrice: 50
+  pullPrice: 30
   currencyManager: {fileID: 0}
   clarinet: {fileID: 1898662109}
   cymbals: {fileID: 1744591312585175880}
