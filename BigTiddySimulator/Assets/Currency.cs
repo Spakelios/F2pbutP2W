@@ -11,7 +11,8 @@ public class Currency : MonoBehaviour
     public TextMeshProUGUI Level;
     public Button button;
     public Animator ponytail, glasses,wall, flute, fhorn , violin , bowl , piano , bass, himbo , harp;
-    
+    public Button viola;
+    public Button himbos;
 
     private void Update()
     {
@@ -57,7 +58,12 @@ public class Currency : MonoBehaviour
          if (ShowCurrency.himbo >= 2)
         {
             himbo.GetComponent<Animator>().Play("himbo");
+            himbos.interactable = true;
         }
+         else
+         {
+             himbos.interactable = false;
+         }
          if (ShowCurrency.fhorn >= 2)
         {
             fhorn.GetComponent<Animator>().Play("fhorn");
@@ -65,7 +71,12 @@ public class Currency : MonoBehaviour
          if (ShowCurrency.violin >= 2)
         {
             violin.GetComponent<Animator>().Play("violin");
+            viola.interactable = true;
         }
+         else
+         {
+             viola.interactable = false;
+         }
          if (ShowCurrency.bowl >= 2)
         {
             bowl.GetComponent<Animator>().Play("bowl4");
